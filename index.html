@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الشبكة الطبية بالإسكندرية 2026 | نقابة المهندسين بالإسكندرية</title>
+<meta name="description" content="بحث في الشبكة الطبية لمشروع الرعاية الصحية 2026 - نقابة المهندسين بالإسكندرية. ابحث بالاسم أو التخصص أو المنطقة أو رقم التليفون. إعداد م. يوسف أسامة.">
+<meta name="author" content="Eng. Youssef Ossama">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">تخطي للذهاب إلى المحتوى</a>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="https://www.alexengsyn.com/" target="_blank" rel="noopener">
+      <img src="assets/logo.png" alt="نقابة المهندسين بالإسكندرية">
+      <span class="brand-txt">
+        <b>نقابة المهندسين بالإسكندرية</b>
+        <small>لجنة الرعاية الصحية والمعاشات</small>
+      </span>
+    </a>
+    <nav class="mainnav">
+      <a href="https://www.alexengsyn.com/" target="_blank" rel="noopener">الرئيسية</a>
+      <a href="https://www.alexengsyn.com/lhdmt-lnqby" target="_blank" rel="noopener">الخدمات النقابية</a>
+      <a href="https://www.alexengsyn.com/dlyl-lr-y-lshy-1" target="_blank" rel="noopener">دليل الرعاية الصحية</a>
+      <a href="https://www.alexengsyn.com/ljn-lr-y-lshy-w-lm-sht" target="_blank" rel="noopener">لجنة الرعاية الصحية</a>
+      <a class="active" href="#main">الشبكة الطبية</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="crumb">
+      <a href="https://www.alexengsyn.com/" target="_blank" rel="noopener">الرئيسية</a>
+      <span>/</span>
+      <a href="https://www.alexengsyn.com/ljn-lr-y-lshy-w-lm-sht" target="_blank" rel="noopener">لجنة الرعاية الصحية والمعاشات</a>
+      <span>/</span> الشبكة الطبية
+    </p>
+    <h1>الشبكة الطبية بالإسكندرية</h1>
+    <p class="lead">
+      دليل كامل وقابل للبحث لمقدمي الخدمة المتعاقدين ضمن مشروع الرعاية الصحية للعام 2026 —
+      أطباء، مستشفيات، معامل تحاليل، مراكز أشعة وعيادات تخصصية.
+      يمكنك البحث بالاسم أو التخصص أو المنطقة أو العنوان أو رقم التليفون.
+    </p>
+  </div>
+</section>
+
+<main id="main" class="wrap">
+
+  <div class="searchbox">
+    <div class="field">
+      <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M10 2a8 8 0 105.29 14.03l4.34 4.34 1.41-1.41-4.34-4.34A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="ابحث بالاسم، التخصص، العنوان أو رقم التليفون…" aria-label="بحث">
+      <button id="clear" type="button" title="مسح" aria-label="مسح">&times;</button>
+    </div>
+    <div class="selects">
+      <label>القسم
+        <select id="group"><option value="">كل الأقسام</option></select>
+      </label>
+      <label>التخصص
+        <select id="section"><option value="">كل التخصصات</option></select>
+      </label>
+      <label>الحي
+        <select id="zone"><option value="">كل الأحياء</option></select>
+      </label>
+      <label>المنطقة
+        <select id="district"><option value="">كل المناطق</option></select>
+      </label>
+      <label>ترتيب
+        <select id="sort">
+          <option value="name">الاسم (أ - ي)</option>
+          <option value="section">التخصص</option>
+          <option value="district">المنطقة</option>
+          <option value="orig">ترتيب الدليل</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+
+
+  <div class="bar">
+    <p id="count" class="count" aria-live="polite"></p>
+    <div class="exports">
+      <span class="xlbl">تحميل النتائج:</span>
+      <button id="dl-pdf"  class="xbtn" type="button" title="تصدير النتائج الظاهرة كملف PDF">
+        <svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg> PDF
+      </button>
+      <button id="dl-xlsx" class="xbtn" type="button" title="تصدير النتائج الظاهرة كملف Excel">
+        <svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg> Excel
+      </button>
+    </div>
+  </div>
+
+  <div id="results" class="cards"></div>
+
+  <div id="empty" class="empty" hidden>
+    <b>لا توجد نتائج مطابقة</b>
+    <span>جرّب كلمة أقصر أو ابحث بجزء من الاسم / التخصص.</span>
+  </div>
+
+  <div class="pager">
+    <button id="more" type="button" hidden>عرض المزيد</button>
+  </div>
+
+  <p class="note">
+    المصدر: كتيب الشبكة الطبية بالإسكندرية 2026 الصادر عن لجنة الرعاية الصحية والمعاشات.
+    الخصومات تُصرف من خلال الكارنيه الساري للمهندس وذويه. يُرجى التأكد من المواعيد هاتفياً قبل التوجه.
+  </p>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="credit-box">
+      <span>إعداد وتطوير</span>
+      <b>م. يوسف أسامة</b>
+      <span>تطوعاً لنقابتنا الحبيبة ❤</span>
+    </p>
+    <p class="sm">مع تحيات لجنة الرعاية الصحية والمعاشات</p>
+  </div>
+</footer>
+
+<script src="export.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
