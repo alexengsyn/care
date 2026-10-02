@@ -76,10 +76,18 @@ a{color:inherit}
 }
 #clear:hover{background:#e0e6da}
 .selects{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
-.selects label{display:flex;flex-direction:column;gap:5px;font-size:12.5px;font-weight:700;color:var(--muted);flex:1 1 150px}
+.selects label{
+  display:flex;flex-direction:column;gap:5px;font-size:12.5px;font-weight:700;
+  color:var(--muted);flex:1 1 150px;
+  /* flex items default to min-width:auto, which lets a <select> with a long
+     option (e.g. the full hospital-tier name) blow out the row. */
+  min-width:0
+}
 .selects select{
+  width:100%;max-width:100%;min-width:0;
   padding:10px 12px;border:1.5px solid var(--line);border-radius:9px;font:inherit;font-size:14.5px;
-  background:#fbfcfa;color:var(--ink);cursor:pointer
+  background:#fbfcfa;color:var(--ink);cursor:pointer;
+  text-overflow:ellipsis;white-space:nowrap;overflow:hidden
 }
 .selects select:focus{outline:none;border-color:var(--green-2)}
 
